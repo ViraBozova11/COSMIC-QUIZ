@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("https://starwalk.space/gallery/images/what-is-space/1140x641.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    margin: 30px 0;
+    color: white;
+    text-shadow: 0 0 15px cyan;
+}
+
+.container,
+.question{
+    width: 70vh;
+    max-width: 700px;
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid cyan;
+    border-radius: 15px;
+    box-shadow: 0 0 20px cyan;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+h3{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px cyan;
+}
+
+.record{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.r{
+    color: cyan;
+    font-weight: bold;
+}
+
+label{
+    color: white;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#difficulty{
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid cyan;
+    background: #111;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: cyan;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px cyan;
+}
+
+.container button{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0;
+}
+
+.q{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+.answers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.a{
+    width: 100%;
+    height: 55px;
+}
+
+.next{
+    display: block;
+    width: 180px;
+    height: 50px;
+    margin: 30px auto 0;
+}
+
+@media (max-width: 600px){
+
+    h1{
+        font-size: 50px;
+    }
+
+    .answers{
+        grid-template-columns: 1fr;
+    }
+
+    .q{
+        font-size: 22px;
+    }
+}
+.question{
+    display: none;
+}
+.result{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px cyan;
+}
+.score{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.record{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
